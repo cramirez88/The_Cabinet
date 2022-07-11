@@ -46,7 +46,7 @@ module.exports.getOneDrink = (req, res) => {
 // delete a drink
 
 module.exports.deleteDrink = (req, res) => {
-  Pet.deleteOne({_id: req.params._id})
+  Drink.deleteOne({_id: req.params._id})
   .then(deletedDrink => res.json(deletedDrink))
   .catch(err => res.status(400).json(err))
 }
