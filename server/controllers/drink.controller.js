@@ -28,7 +28,7 @@ module.exports.getAllDrinks = (request, response) => {
 
 // Edit Drinks
 
-module.exports.updatePet = (request, response) => {
+module.exports.updateDrink = (request, response) => {
   Drink.findOneAndUpdate({_id: request.params._id}, request.body, {new: true, runValidators:true})
   .then(updatedDrink => response.json(updatedDrink))
   .catch(err => response.status(400).json(err))
