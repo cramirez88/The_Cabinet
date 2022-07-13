@@ -21,7 +21,7 @@ const DrinkList = props => {
 
   return (
  <div>
-  <Link to={'/new'}>Search For a Drink</Link> 
+  <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
 <table className='table table-primary'>
 <thead>
   <tr>

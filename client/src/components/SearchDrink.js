@@ -24,10 +24,10 @@ const SearchDrink = props => {
   return (
     <div>
       <h1>It's 5' O Clock Somewhere!</h1>
-      <Link to={'/'}>Home</Link>
+      <Link to={'/'} className='btn btn-primary'>Home</Link>
       <form onSubmit={handleButtonSubmit}>
         <input type='text' onChange={e => setDrinkName(e.target.value)} value={drinkName}></input>
-        <button>Search for a Drink!</button>
+        <button className='btn btn-success'>Search for a Drink!</button>
       </form>
       {
         drinks.map((drink, index) => (
