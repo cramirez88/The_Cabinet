@@ -26,7 +26,9 @@ const DrinkList = props => {
 <thead>
   <tr>
     <th scope='col'>Drink</th>
-    <th scope='col'>Actions Available</th>
+    <th scope='col'>Picture</th>
+    <th scope='col'>Alcoholic?</th>
+    <th scope='col'>How to Drink</th>
   </tr>
 </thead>
 <tbody>
@@ -36,7 +38,8 @@ const DrinkList = props => {
       <tr key={index}>
         <td>{`${drink.strDrink}`}</td>
         <td><img src={`${drink.strDrinkThumb}`} width='100px' height={'100px'} alt='drink'></img></td>
-        
+        <td>{`${drink.strAlcoholic}`} </td>
+        <td>{`${drink.strCategory}`} </td>
       </tr>
     ))
   }
