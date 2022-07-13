@@ -1,33 +1,28 @@
 import React, {useEffect, useState} from 'react'
+import {Link} from 'react-router-dom'
 import axios from 'axios'
 
 
 const DrinkList = props => {
   const [drinkName, setDrinkName] = useState([])
-  const [drinks, setDrinks] = useState([])
 
   
 
-  useEffect(() => {
-    axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkName}`)
-    .then(res => {setDrinkName(res.data.drinks)
-                  console.log(res.data.drinks)
-    })
-    .catch(err => console.log(err))
-  }, [])
-
- 
-
+    useEffect(() => {
+      axios.get(`https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkName}`)
+      .then(res => {setDrinkName(res.data.drinks)
+                    console.log(res.data.drinks)
+      })
+      .catch(err => console.log(err))
+    }, [])
+  
+  
+  
 
   return (
-    <div>
-      <form >
-      <input type='text' onChange={e => setDrinkName(e.target.value)}></input>
-      <button>Search Cocktail</button>
-    </form>
-    
-
-<table className='table table-dark'>
+ <div>
+  <Link to={'/new'}>Search For a Drink</Link> 
+<table className='table table-primary'>
 <thead>
   <tr>
     <th scope='col'>Drink</th>
