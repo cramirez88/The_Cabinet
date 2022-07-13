@@ -6,7 +6,7 @@ import {Link} from 'react-router-dom'
 const SearchDrink = props => {
   const [drinks, setDrinks] = useState([])
   const [drinkName, setDrinkName] = useState('')
-  const URL = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinks}`
+  const URL = `https://www.thecocktaildb.com/api/json/v1/1/search.php?s=${drinkName}`
 
  
 
@@ -27,17 +27,18 @@ const SearchDrink = props => {
       <h1>It's 5' O Clock Somewhere!</h1>
       <Link to={'/'}>Home</Link>
       <form onSubmit={handleButtonSubmit}>
-        <input type='text' onChange={e => setDrinks(e.target.value)}></input>
+        <input type='text' onChange={e => setDrinkName(e.target.value)}></input>
         <button>Search for a Drink</button>
       </form>
-      {/* {
+      {
         drinks.map((drink, index) => (
           <div key={index}>
-            <img src={drink.strDrinkThumb} alt={drink.strDrink}></img>
+            <img src={drink.strDrinkThumb} alt={drink.strDrink} width={'100px'}></img>
+            <p>{drink.strDrink}</p>
           </div>
           
         ) )
-      } */}
+      }
      
     </div>
   )
