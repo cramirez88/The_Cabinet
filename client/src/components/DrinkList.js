@@ -23,6 +23,7 @@ const DrinkList = props => {
  <div>
   <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
   <Link to={'/create'} className='btn btn-primary'>Create a Drink</Link> 
+  <Link to={'/my-drinks'} className='btn btn-success'>My Drink List</Link>
 <table className='table table-primary'>
 <thead>
   <tr>
