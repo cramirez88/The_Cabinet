@@ -24,6 +24,7 @@ const CreateDrink = props => {
   return (
     <div className="container">
     <Link to={'/'}>Home</Link>
+    <Link to={'/my-drinks'}>My Drinks</Link>
     <h3>Add a New Drink</h3>
       <form onSubmit={submitHandler}>
         <p className='form-group'>
