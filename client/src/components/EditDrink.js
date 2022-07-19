@@ -34,8 +34,7 @@ const EditDrink = props => {
       setName(response.data.name)
       setDescription(response.data.description)
       setInstructions(response.data.instructions)
-      // console.log(response.data)
-      navigate('/')
+      navigate('/my-drinks')
     }) 
     .catch((err) => {
       const errorResponseObj = err.response.data.errors
