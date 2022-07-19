@@ -39,7 +39,7 @@ const CreateDrink = props => {
     <h3 className='color'>Add a New Drink</h3>
       <form onSubmit={submitHandler}>
       {errors.map((err, index) => (
-              <p key={index}>{err}</p>
+              <p className='color' key={index}>{err}</p>
           ))}
         <p className='form-group'>
           <label className='color'>Name</label>
@@ -49,7 +49,7 @@ const CreateDrink = props => {
         <p className="form-group">
           <label className='color'>Description</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setDescription(e.target.value)}/>
+          <textarea className="form-control" type="text" onChange={(e) => setDescription(e.target.value)}></textarea>
         </p>
         <p className="form-group">
           <label className='color'>Instructions</label>

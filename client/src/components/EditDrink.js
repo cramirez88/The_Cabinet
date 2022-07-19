@@ -51,7 +51,7 @@ const EditDrink = props => {
     <div>
       <Link className='btn btn-primary' to={'/'}>Home</Link>
       <form onSubmit={handleSubmit}>
-      {errors.map((err, index) => (<p key={index}>{err}</p>))}
+      {errors.map((err, index) => (<p className='color' key={index}>{err}</p>))}
         <p className='form-group'>
           <label className='color'>Name</label>
           <br />
