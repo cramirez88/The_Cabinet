@@ -11,11 +11,22 @@ const MyDrinkList = props => {
     .catch(err => console.log(err))
   }, [])
 
+  const deleteDrink = _id => {
+
+    axios.delete(`http://localhost:8000/api/drink/${_id}`)
+    .then(deletedDrink => {
+      setDrinks(drinks.filter(filterDrinks => filterDrinks._id !== _id))
+  
+    }, [])
+    .catch(err => console.log(err))
+  }
+
 
   return (
     <div>
       <h1>My Cocktails</h1>
       <Link to={'/create'}>Create a Drink</Link>
+      <Link to={'/new'}>Search for a Drink</Link>
       <table>
         <thead>
           <tr>
@@ -28,7 +39,7 @@ const MyDrinkList = props => {
             drinks.map((drink, index) => (
               <tr key={index}>
                 <td>{drink.name}</td>
-                <td><Link to={`/edit/${drink._id}`}><button className='btn btn-primary'>Edit</button></Link></td>
+                <td><Link to={`/edit/${drink._id}`}><button className='btn btn-primary'>Edit</button></Link><button onClick={() => deleteDrink(drink._id)}className='btn btn-danger'>Delete</button></td>
               </tr>
             ))
           }

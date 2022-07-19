@@ -6,6 +6,8 @@ const CreateDrink = props => {
   const [name, setName] = useState('')
   const [description, setDescription] = useState('')
   const [instructions, setInstructions] = useState('')
+  const [errors, setErrors] = useState([])
+
   const navigate = useNavigate()
 
   const submitHandler = (e) => {
@@ -17,8 +19,17 @@ const CreateDrink = props => {
     }
     ).then((res) => {
       console.log(res)
-      navigate('/')
-    }).catch((err) => console.log(err))}
+      navigate('/my-drinks')
+    }) 
+    .catch((err) => {
+          const errorResponseObj = err.response.data.errors
+          const errorArr = []
+          for (const key of Object.keys(errorResponseObj)){
+            errorArr.push(errorResponseObj[key].message)
+          }
+          setErrors(errorArr)
+            });
+  };
 
 
   return (
@@ -27,6 +38,9 @@ const CreateDrink = props => {
     <Link to={'/my-drinks'}>My Drinks</Link>
     <h3>Add a New Drink</h3>
       <form onSubmit={submitHandler}>
+      {errors.map((err, index) => (
+              <p key={index}>{err}</p>
+          ))}
         <p className='form-group'>
           <label>Name</label>
           <br />
