@@ -34,7 +34,7 @@ const CreateDrink = props => {
 
   return (
     <div className="container">
-    <Link to={'/'}>Home</Link>
+    <Link className=''to={'/'}>Home</Link>
     <Link to={'/my-drinks'}>My Drinks</Link>
     <h3>Add a New Drink</h3>
       <form onSubmit={submitHandler}>
@@ -54,7 +54,7 @@ const CreateDrink = props => {
         <p className="form-group">
           <label>Instructions</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)}/>
+          <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)}></textarea>
         </p>
         <button className="btn btn-success">Submit</button>
       </form>

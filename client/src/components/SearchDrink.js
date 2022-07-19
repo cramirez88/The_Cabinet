@@ -25,7 +25,7 @@ const SearchDrink = props => {
     <div className='bg-dark' style={{width: '100vw'}}>
       <Link to={'/'} className='btn btn-primary'>Home</Link>
       <form onSubmit={handleButtonSubmit}>
-      <h1 className='title'>It's 5' O Clock Somewhere!</h1>
+      <h1 className='title'>&#127958; It's 5' O Clock Somewhere! &#127865;</h1>
         <div className='c-form'>
         <input type='text' onChange={e => setDrinkName(e.target.value)} value={drinkName}></input>
         <button className='btn btn-success'>Search for a Drink!</button>

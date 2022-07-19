@@ -25,13 +25,13 @@ const MyDrinkList = props => {
   return (
     <div>
       <h1>My Cocktails</h1>
-      <Link to={'/create'}>Create a Drink</Link>
-      <Link to={'/new'}>Search for a Drink</Link>
-      <table>
+      <Link className='btn btn-primary drink' to={'/create'}>Create a Drink &#127865;</Link>
+      <Link className='btn btn-success' to={'/new'}>Search for a Drink &#129488;</Link>
+      <table className='table table-success'>
         <thead>
           <tr>
-          <th>Drink Name</th>
-          <th>Actions Available</th>
+          <th col='scope'>Drink Name</th>
+          <th col='scope'>Actions Available</th>
           </tr>
         </thead>
         <tbody>
@@ -39,7 +39,7 @@ const MyDrinkList = props => {
             drinks.map((drink, index) => (
               <tr key={index}>
                 <td>{drink.name}</td>
-                <td><Link to={`/edit/${drink._id}`}><button className='btn btn-primary'>Edit</button></Link><button onClick={() => deleteDrink(drink._id)}className='btn btn-danger'>Delete</button></td>
+                <td><Link to={`/edit/${drink._id}`}><button className='btn btn-primary'>Edit</button></Link><button onClick={() => deleteDrink(drink._id)}className='btn btn-danger del'>Delete</button></td>
               </tr>
             ))
           }

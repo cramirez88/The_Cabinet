@@ -65,7 +65,7 @@ const EditDrink = props => {
         <p className="form-group">
           <label>Instructions</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions}/>
+          <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions}></textarea>
         </p>
         <button className="btn btn-success">Submit</button>
       </form>
