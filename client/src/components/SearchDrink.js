@@ -22,19 +22,22 @@ const SearchDrink = props => {
       setDrinkName('')
     }
   return (
-    <div>
-      <h1>It's 5' O Clock Somewhere!</h1>
+    <div className='bg-dark' style={{width: '100vw'}}>
       <Link to={'/'} className='btn btn-primary'>Home</Link>
       <form onSubmit={handleButtonSubmit}>
+      <h1 className='title'>It's 5' O Clock Somewhere!</h1>
+        <div className='c-form'>
         <input type='text' onChange={e => setDrinkName(e.target.value)} value={drinkName}></input>
         <button className='btn btn-success'>Search for a Drink!</button>
+        </div>
       </form>
-      <div className='card' style={{'width': '18rem'}}>
+      <div className=' my-5 align-items-center justify-content-center'>
+      <div className='row col-8'>
       {
         drinks.map((drink, index) => (
-          <div key={index}>
+          <div key={index} className='card' style={{'width': '18rem', margin: '3rem'}}>
             <img src={drink.strDrinkThumb} alt={drink.strDrink} className='card-img-top'></img>
-            <div className='card-body'>
+            <div className='card-body py-4'>
             <h4 className='card-title'>{drink.strDrink}</h4>
             <p>Glass: {drink.strGlass}</p>
             <h4>Ingredients:</h4>
@@ -49,6 +52,9 @@ const SearchDrink = props => {
           </div>
         ))
       }
+      </div>
+      
+  
       </div>
 
     </div>
