@@ -49,21 +49,21 @@ const EditDrink = props => {
 
   return(
     <div>
-      <Link to={'/'}>Home</Link>
+      <Link className='btn btn-primary' to={'/'}>Home</Link>
       <form onSubmit={handleSubmit}>
       {errors.map((err, index) => (<p key={index}>{err}</p>))}
         <p className='form-group'>
-          <label>Name</label>
+          <label className='color'>Name</label>
           <br />
           <input className="form-control" type="text" onChange={(e) => setName(e.target.value)} value={name}/>
         </p>
         <p className="form-group">
-          <label>Description</label>
+          <label className='color'>Description</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setDescription(e.target.value)} value={description}/>
+          <textarea className="form-control" type="text" onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
         </p>
         <p className="form-group">
-          <label>Instructions</label>
+          <label className='color'>Instructions</label>
           <br />
           <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions}></textarea>
         </p>

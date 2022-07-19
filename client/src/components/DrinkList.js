@@ -21,10 +21,13 @@ const DrinkList = props => {
 
   return (
  <div>
-  <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
+   <div className='nav'>
+   <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
   <Link to={'/create'} className='btn btn-primary'>Create a Drink</Link> 
   <Link to={'/my-drinks'} className='btn btn-success'>My Drink List</Link>
-<table className='table table-primary'>
+   </div>
+
+<table className='table table-danger'>
 <thead>
   <tr>
     <th scope='col'>Drink</th>

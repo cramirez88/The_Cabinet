@@ -24,7 +24,7 @@ const MyDrinkList = props => {
 
   return (
     <div>
-      <h1>My Cocktails</h1>
+      <h1 className='color'>My Cocktails</h1>
       <Link className='btn btn-primary drink' to={'/create'}>Create a Drink &#127865;</Link>
       <Link className='btn btn-success' to={'/new'}>Search for a Drink &#129488;</Link>
       <table className='table table-success'>

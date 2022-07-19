@@ -34,25 +34,25 @@ const CreateDrink = props => {
 
   return (
     <div className="container">
-    <Link className=''to={'/'}>Home</Link>
-    <Link to={'/my-drinks'}>My Drinks</Link>
-    <h3>Add a New Drink</h3>
+    <Link className=' btn btn-primary home'to={'/'}>Home</Link>
+    <Link className='btn btn-success my-drinks' to={'/my-drinks'}>My Drinks</Link>
+    <h3 className='color'>Add a New Drink</h3>
       <form onSubmit={submitHandler}>
       {errors.map((err, index) => (
               <p key={index}>{err}</p>
           ))}
         <p className='form-group'>
-          <label>Name</label>
+          <label className='color'>Name</label>
           <br />
           <input className="form-control" type="text" onChange={(e) => setName(e.target.value)} />
         </p>
         <p className="form-group">
-          <label>Description</label>
+          <label className='color'>Description</label>
           <br />
           <input className="form-control" type="text" onChange={(e) => setDescription(e.target.value)}/>
         </p>
         <p className="form-group">
-          <label>Instructions</label>
+          <label className='color'>Instructions</label>
           <br />
           <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)}></textarea>
         </p>

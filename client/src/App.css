@@ -41,6 +41,7 @@
 .container {
   margin-left: 0 !important;
   margin-right: 0 !important;
+  background-color: #282c34;
 }
 
 .c-form{
@@ -60,4 +61,25 @@
 
 .drink {
   margin-right: 5px;
+}
+
+
+.home {
+  margin-right: 5px;
+  margin-top: 5px;
+}
+
+.my-drinks {
+  margin-top: 5px;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-around;
+  background-color: #282c34;
+}
+
+
+.color {
+  color: white;
 }
