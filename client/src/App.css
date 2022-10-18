@@ -75,12 +75,6 @@
   margin-top: 5px;
 }
 
-.nav {
-  display: flex;
-  justify-content: space-around;
-  background-color: #282c34;
-}
-
 
 .color {
   color: white;

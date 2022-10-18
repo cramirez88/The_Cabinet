@@ -24,18 +24,24 @@ const DrinkList = props => {
   return (
  <div className='background-cover'>
    <div className='nav'>
-   <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
-  <Link to={'/create'} className='btn btn-primary'>Create a Drink</Link> 
-  <Link to={'/my-drinks'} className='btn btn-success'>My Drink List</Link>
+    <div>
+    <h1 className='menu'>Bar Menu</h1>
+    </div>
+    <div>
+    <Link to={'/new'} className='buttons'>Search For a Drink</Link> 
+  <Link to={'/create'} className='buttons'>Create a Drink</Link> 
+  <Link to={'/my-drinks'} className='buttons'>My Drink List</Link>
+    </div>
+  
    </div>
 
 <table className='table'>
 <thead>
   <tr>
-    <th scope='col'>Drink</th>
-    <th scope='col'>Picture</th>
-    <th scope='col'>Alcoholic?</th>
-    <th scope='col'>How to Drink</th>
+    <th className='text' scope='col'>Drink</th>
+    <th className='text' scope='col'>Picture</th>
+    <th className='text' scope='col'>Alcoholic?</th>
+    <th className='text' scope='col'>How to Drink</th>
   </tr>
 </thead>
 <tbody>
@@ -43,10 +49,10 @@ const DrinkList = props => {
     drinkName.map((drink, index) => 
        (
       <tr key={index}>
-        <td>{`${drink.strDrink}`}</td>
+        <td className='text'>{`${drink.strDrink}`}</td>
         <td><img src={`${drink.strDrinkThumb}`} width='100px' height={'100px'} alt='drink'></img></td>
-        <td>{`${drink.strAlcoholic}`} </td>
-        <td>{`${drink.strCategory}`} </td>
+        <td className='text'>{`${drink.strAlcoholic}`} </td>
+        <td className='text'>{`${drink.strCategory}`} </td>
       </tr>
     ))
   }

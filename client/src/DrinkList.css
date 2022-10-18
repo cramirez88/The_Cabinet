@@ -1,4 +1,38 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
 .background-cover {
   background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F773%2F773064.jpg&f=1&nofb=1&ipt=ebd737105dd7fa1ac47963330d69ec784fc34c9b7a9c5b52ac9f58f31aafdde4&ipo=images') no-repeat center center fixed ;
   background-size: cover;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  color: white;
+}
+
+.menu {
+  font-family: 'Fuzzy Bubbles', cursive;
+  margin-left: 5px;
+  
+}
+
+.buttons {
+  background-color: rgb(59, 55, 55);
+  padding: 5px;
+  margin: 10px 5px;
+  border-radius: 8px;
+  opacity: 0.5;
+  color: rgba(255, 255, 255, 0.798);
+}
+
+.buttons:hover{
+  color: rgb(255, 255, 255);
+}
+
+.text {
+  border: 1px solid white;
+  color: white;
 }
