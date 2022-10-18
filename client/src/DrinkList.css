@@ -1,0 +1,4 @@
+.background-cover {
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fimages8.alphacoders.com%2F773%2F773064.jpg&f=1&nofb=1&ipt=ebd737105dd7fa1ac47963330d69ec784fc34c9b7a9c5b52ac9f58f31aafdde4&ipo=images') no-repeat center center fixed ;
+  background-size: cover;
+}

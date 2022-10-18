@@ -1,6 +1,8 @@
 import React, {useEffect, useState} from 'react'
 import {Link} from 'react-router-dom'
 import axios from 'axios'
+import '../DrinkList.css'
+import '../App.css'
 
 
 const DrinkList = props => {
@@ -20,14 +22,14 @@ const DrinkList = props => {
   
 
   return (
- <div>
+ <div className='background-cover'>
    <div className='nav'>
    <Link to={'/new'} className='btn btn-danger'>Search For a Drink</Link> 
   <Link to={'/create'} className='btn btn-primary'>Create a Drink</Link> 
   <Link to={'/my-drinks'} className='btn btn-success'>My Drink List</Link>
    </div>
 
-<table className='table table-danger'>
+<table className='table'>
 <thead>
   <tr>
     <th scope='col'>Drink</th>

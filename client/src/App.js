@@ -10,7 +10,7 @@ import EditDrink from './components/EditDrink';
 
 function App() {
   return (
-    <div className='container'>
+    <div>
       <BrowserRouter>
         <Routes>
           <Route element={<DrinkList/>} path={'/'}></Route>

@@ -1,3 +1,4 @@
+
 .App {
   text-align: center;
 }
@@ -41,7 +42,8 @@
 .container {
   margin-left: 0 !important;
   margin-right: 0 !important;
-  background-color: #282c34;
+  background-color: #282c34; 
+   width: 100%;
 }
 
 .c-form{
