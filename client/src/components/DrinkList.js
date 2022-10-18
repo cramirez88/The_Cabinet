@@ -50,7 +50,7 @@ const DrinkList = props => {
        (
       <tr key={index}>
         <td className='text'>{`${drink.strDrink}`}</td>
-        <td><img src={`${drink.strDrinkThumb}`} width='100px' height={'100px'} alt='drink'></img></td>
+        <td><img className='images' src={`${drink.strDrinkThumb}`} width='100px' height={'100px'} alt='drink'></img></td>
         <td className='text'>{`${drink.strAlcoholic}`} </td>
         <td className='text'>{`${drink.strCategory}`} </td>
       </tr>

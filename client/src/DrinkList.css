@@ -13,10 +13,10 @@
   color: white;
 }
 
-.menu {
+.menu, .text {
   font-family: 'Fuzzy Bubbles', cursive;
   margin-left: 5px;
-  
+
 }
 
 .buttons {
@@ -35,4 +35,8 @@
 .text {
   border: 1px solid white;
   color: white;
+}
+
+.images {
+  border-radius: 8px;
 }
