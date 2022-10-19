@@ -1,10 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
 
 
-.container {
+.contain {
   background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fef%2Fda%2F87%2Fefda8774a022ea6e6c324ff2141398df.jpg&f=1&nofb=1&ipt=eee0a794915c9df9ff3566c4e74c3a0ea67719f7004c417095e8ff4294df0a89&ipo=images') no-repeat center fixed;
   background-size: cover;
   height: 100vh;
+  margin: 0;
 }
 
 .button {

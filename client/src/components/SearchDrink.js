@@ -24,7 +24,7 @@ const SearchDrink = props => {
       setDrinkName('')
     }
   return (
-    <div className='container'>
+    <div className='contain'>
       <Link to={'/'} className='button'>Home</Link>
       <form onSubmit={handleButtonSubmit}>
       <h1 className='title'>&#127958; It's 5' O Clock Somewhere! &#127865;</h1>
