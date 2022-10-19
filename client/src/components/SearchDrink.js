@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import '../SearchDrink.css'
+import '../App.js'
 
 
 const SearchDrink = props => {
@@ -22,22 +24,22 @@ const SearchDrink = props => {
       setDrinkName('')
     }
   return (
-    <div className='bg-dark' style={{width: '100vw'}}>
-      <Link to={'/'} className='btn btn-primary'>Home</Link>
+    <div className='container'>
+      <Link to={'/'} className='button'>Home</Link>
       <form onSubmit={handleButtonSubmit}>
       <h1 className='title'>&#127958; It's 5' O Clock Somewhere! &#127865;</h1>
         <div className='c-form'>
-        <input type='text' onChange={e => setDrinkName(e.target.value)} value={drinkName}></input>
-        <button className='btn btn-success'>Search for a Drink!</button>
+        <input className='search' type='text' onChange={e => setDrinkName(e.target.value)} value={drinkName}></input>
+        <button className='button'>Search for a Drink!</button>
         </div>
       </form>
-      <div className=' my-5 align-items-center justify-content-center'>
-      <div className='row col-8'>
+      <div>
+      <div className='card-contain'>
       {
         drinks.map((drink, index) => (
-          <div key={index} className='card' style={{'width': '18rem', margin: '3rem'}}>
-            <img src={drink.strDrinkThumb} alt={drink.strDrink} className='card-img-top'></img>
-            <div className='card-body py-4'>
+          <div key={index} className='card'>
+            <img src={drink.strDrinkThumb} alt={drink.strDrink} ></img>
+            <div>
             <h4 className='card-title'>{drink.strDrink}</h4>
             <p>Glass: {drink.strGlass}</p>
             <h4>Ingredients:</h4>

@@ -40,16 +40,13 @@
 
 
 .container {
-  margin-left: 0 !important;
-  margin-right: 0 !important;
-  background-color: #282c34; 
-   width: 100%;
+  /* margin-left: 0 !important;
+  margin-right: 0 !important; */
+  width: 100%;
+  height: 100vh;
 }
 
-.c-form{
-  display: flex;
-  justify-content: center;
-}
+
 .title {
   color: white;
   text-align: center;
@@ -59,23 +56,23 @@
 
 .del {
   margin-left: 5px;
-}
+} 
 
-.drink {
+ .drink {
   margin-right: 5px;
-}
+} 
 
 
-.home {
+ .home {
   margin-right: 5px;
   margin-top: 5px;
-}
+} 
 
-.my-drinks {
+ .my-drinks {
   margin-top: 5px;
 }
 
 
 .color {
   color: white;
-}
+} 

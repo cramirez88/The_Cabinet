@@ -16,7 +16,6 @@
 .menu, .text {
   font-family: 'Fuzzy Bubbles', cursive;
   margin-left: 5px;
-
 }
 
 .buttons {
@@ -26,6 +25,7 @@
   border-radius: 8px;
   opacity: 0.5;
   color: rgba(255, 255, 255, 0.798);
+  text-decoration: none;
 }
 
 .buttons:hover{
@@ -39,4 +39,6 @@
 
 .images {
   border-radius: 8px;
+  width: 5.5rem;
+  height: 5.5rem;
 }

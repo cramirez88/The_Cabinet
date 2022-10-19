@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+
+.container {
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fef%2Fda%2F87%2Fefda8774a022ea6e6c324ff2141398df.jpg&f=1&nofb=1&ipt=eee0a794915c9df9ff3566c4e74c3a0ea67719f7004c417095e8ff4294df0a89&ipo=images') no-repeat center fixed;
+  background-size: cover;
+  height: 100vh;
+}
+
+.button {
+  color: white;
+  text-decoration: none;
+  border: 1px solid rgba(255, 255, 255, 0.898);
+  border-radius: 3px;
+  padding: 5px;
+  margin: 10px;
+  background-color: transparent;
+}
+
+.button:hover{
+  color: rgba(255, 255, 255, 0.925)
+}
+
+.c-form{
+  display: flex;
+  justify-content: center;
+}
+
+.search {
+  outline: none;
+  border-radius: 50px;
+  background-color: transparent;
+  border: 1px solid rgba(255, 255, 255, 0.898);
+  color: white;
+}
+
+.title {
+  font-family: 'Fuzzy Bubbles', cursive;
+}
+
+.card-contain {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fi.pinimg.com%2Foriginals%2Fef%2Fda%2F87%2Fefda8774a022ea6e6c324ff2141398df.jpg&f=1&nofb=1&ipt=eee0a794915c9df9ff3566c4e74c3a0ea67719f7004c417095e8ff4294df0a89&ipo=images') no-repeat center fixed;
+  background-size: cover;
+  flex-wrap: wrap;
+  height: auto;
+}
+
+.card {
+  margin: 20px;
+  width: 25%;
+  padding: 5px;
+}
+
+img {
+  width: 50%;
+  height: 50%;
+  align-self: center;
+  margin: 5px 0;
+}
