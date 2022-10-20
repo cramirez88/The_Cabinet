@@ -14,5 +14,10 @@ Christian Ramirez:
 https://github.com/cramirez88
 
 ## Demo
-### Homepage
-![ezgif com-gif-maker (1)](/https://ezgif.com/optimize/ezgif-3-224c108304.gif)
+### Menu and Search Feature
+![ com-er](https://user-images.githubusercontent.com/67248766/196849551-00798c13-0c5c-4e47-802b-e980dd1fa6a2.gif)
+
+### Form and My List (CRUD Features with Validations)
+
+![ezgif com-gif-maker (2)](https://user-images.githubusercontent.com/67248766/196850390-9a3466f6-cd89-4758-adba-fa679db565e2.gif)
+
