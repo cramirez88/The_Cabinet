@@ -15,4 +15,4 @@ https://github.com/cramirez88
 
 ## Demo
 ### Homepage
-![ezgif com-gif-maker (1)](https://user-images.githubusercontent.com/67248766/191154160-7146b041-8f3b-4b56-85fd-f0839f0cb471.gif)
+![ezgif com-gif-maker (1)](/https://ezgif.com/optimize/ezgif-3-224c108304.gif)
