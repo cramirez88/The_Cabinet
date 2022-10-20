@@ -48,26 +48,26 @@ const EditDrink = props => {
   }
 
   return(
-    <div>
-      <Link className='btn btn-primary' to={'/'}>Home</Link>
-      <form onSubmit={handleSubmit}>
+    <div className='contain'>
+      <Link className='nav-button form-buttons' to={'/'}>Home</Link>
+      <form className='form-holder' onSubmit={handleSubmit}>
       {errors.map((err, index) => (<p className='color' key={index}>{err}</p>))}
-        <p className='form-group'>
+        <p className='f-group'>
           <label className='color'>Name</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setName(e.target.value)} value={name}/>
+          <input className="f-control" type="text" onChange={(e) => setName(e.target.value)} value={name}/>
         </p>
-        <p className="form-group">
+        <p className="f-group">
           <label className='color'>Description</label>
           <br />
-          <textarea className="form-control" type="text" onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
+          <textarea className="f-control text-form" type="text" onChange={(e) => setDescription(e.target.value)} value={description}></textarea>
         </p>
-        <p className="form-group">
+        <p className="f-group">
           <label className='color'>Instructions</label>
           <br />
-          <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions}></textarea>
+          <textarea className="f-control text-form" type="text" onChange={(e) => setInstructions(e.target.value)} value={instructions}></textarea>
         </p>
-        <button className="btn btn-success">Submit</button>
+        <button className="form-buttons nav-button">Submit</button>
       </form>
     </div>
   )
