@@ -1,6 +1,8 @@
 import React, { useState, useEffect } from 'react'
 import axios from 'axios'
 import {Link} from 'react-router-dom'
+import '../App.css'
+import '../MyDrinkList.css'
 
 const MyDrinkList = props => {
   const [drinks, setDrinks] = useState([])
@@ -23,11 +25,17 @@ const MyDrinkList = props => {
 
 
   return (
-    <div>
+    <div className='cover'>
+      <div className='header-top'>
       <h1 className='color'>My Cocktails</h1>
-      <Link className='btn btn-primary drink' to={'/create'}>Create a Drink &#127865;</Link>
-      <Link className='btn btn-success' to={'/new'}>Search for a Drink &#129488;</Link>
-      <table className='table table-success'>
+      <div className='link-btns'>
+      <Link className='butto' to={'/create'}>Create a Drink &#127865;</Link>
+      <Link className='butto' to={'/new'}>Search for a Drink &#129488;</Link>
+      </div>
+      
+      </div>
+      
+      <table className='table'>
         <thead>
           <tr>
           <th col='scope'>Drink Name</th>
@@ -39,7 +47,7 @@ const MyDrinkList = props => {
             drinks.map((drink, index) => (
               <tr key={index}>
                 <td>{drink.name}</td>
-                <td><Link to={`/edit/${drink._id}`}><button className='btn btn-primary'>Edit</button></Link><button onClick={() => deleteDrink(drink._id)}className='btn btn-danger del'>Delete</button></td>
+                <td><Link to={`/edit/${drink._id}`}><button className='button edit-btn'>Edit</button></Link><button onClick={() => deleteDrink(drink._id)}className='butto del-btn' >Delete</button></td>
               </tr>
             ))
           }

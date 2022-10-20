@@ -1,0 +1,43 @@
+* {
+  color: white;
+}
+
+.cover {
+  height: 100vh;
+  background: url('https://external-content.duckduckgo.com/iu/?u=https%3A%2F%2Fcdn.wallpaper.com%2Fmain%2Fstyles%2Fresponsive_1200w_scale%2Fs3%2F10._the_punch_room.jpg&f=1&nofb=1&ipt=8009a4acc106c355a4b39f1dc238b0f9aa209379b93eebdb7ed362de9671aa79&ipo=images') no-repeat center center fixed;
+  background-size: cover;
+}
+
+.header-top {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.color {
+  color: white;
+  margin-top: 0;
+}
+
+.butto {
+  background-color: rgb(35, 40, 40);
+  color: white;
+  padding: 10px;
+  border-radius: 8px;
+  margin: 10px 15px;
+  text-decoration: none;
+}
+
+.table {
+  margin: 1.3rem 0;
+}
+
+.edit-btn, .del-btn {
+  padding: 0.4rem 1.3rem;
+}
+
+.del-btn {
+  background-color: rgb(176, 42, 42);
+  outline: none;
+  border: none;
+}
