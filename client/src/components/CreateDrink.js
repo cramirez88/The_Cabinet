@@ -1,6 +1,8 @@
 import axios from 'axios'
 import React, { useState } from 'react'
 import {Link, useNavigate} from 'react-router-dom'
+import '../App.css'
+import '../CreateDrink.css'
 
 const CreateDrink = props => {
   const [name, setName] = useState('')
@@ -33,30 +35,31 @@ const CreateDrink = props => {
 
 
   return (
-    <div className="container">
-    <Link className=' btn btn-primary home'to={'/'}>Home</Link>
-    <Link className='btn btn-success my-drinks' to={'/my-drinks'}>My Drinks</Link>
-    <h3 className='color'>Add a New Drink</h3>
-      <form onSubmit={submitHandler}>
+    <div className="contain">
+    <Link className='form-buttons nav-button'to={'/'}>Home</Link>
+    <Link className='form-buttons nav-button' to={'/my-drinks'}>My Drinks</Link>
+   
+      <form className='form-holder' onSubmit={submitHandler}>
       {errors.map((err, index) => (
               <p className='color' key={index}>{err}</p>
           ))}
-        <p className='form-group'>
+       <h2 className='color'>Add a New Drink</h2>
+        <p className='f-group'>
           <label className='color'>Name</label>
           <br />
-          <input className="form-control" type="text" onChange={(e) => setName(e.target.value)} />
+          <input className="f-control" type="text" onChange={(e) => setName(e.target.value)} />
         </p>
-        <p className="form-group">
+        <p className="f-group">
           <label className='color'>Description</label>
           <br />
-          <textarea className="form-control" type="text" onChange={(e) => setDescription(e.target.value)}></textarea>
+          <textarea className="f-control text-form" type="text" onChange={(e) => setDescription(e.target.value)}></textarea>
         </p>
-        <p className="form-group">
+        <p className="f-group">
           <label className='color'>Instructions</label>
           <br />
-          <textarea className="form-control" type="text" onChange={(e) => setInstructions(e.target.value)}></textarea>
+          <textarea className="f-control text-form" type="text" onChange={(e) => setInstructions(e.target.value)}></textarea>
         </p>
-        <button className="btn btn-success">Submit</button>
+        <button className="form-buttons">Submit</button>
       </form>
     </div>
   );

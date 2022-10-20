@@ -1,0 +1,47 @@
+@import url('https://fonts.googleapis.com/css2?family=Fuzzy+Bubbles&display=swap');
+
+.contain{
+  height: 100vh;
+}
+.color {
+  color: black;
+  font-family: 'Fuzzy Bubbles', cursive;
+  margin-top: 10px;
+  font-size: 1.3rem;
+}
+
+.form-holder {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 1.5rem 0;
+}
+
+
+.f-control{
+  border-radius: 8px;
+  background: none;
+  width: 320px;
+  border: 1px solid white;
+  outline: none;
+}
+
+.form-buttons {
+  border: 1px solid white;
+  border-radius: 8px;
+  padding: 10px;
+  background-color: transparent;
+  color: white;
+  padding: 10px 1.5rem;
+}
+
+.text-form{
+  height: 100px;
+  resize: none;
+}
+
+.nav-button {
+  margin: 1.5rem;
+  text-decoration: none;
+}
